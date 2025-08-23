@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mohamed Fareed - Web Developer & Designer</title>
+    <meta name="description" content="Ahmed Mohamed Fareed - Professional Web Developer specializing in modern web technologies, UI/UX design, and full-stack development.">
+    <meta name="keywords" content="web developer, frontend, backend, full-stack, JavaScript, React, Node.js, Ahmed Mohamed Fareed">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-inter bg-white text-gray-900 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold text-gray-900">Ahmed</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#certificates" class="nav-link">Certificates
+</a>
+          
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-900" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-4 border-t border-gray-100" id="mobile-menu">
+                <a href="#home" class="block py-3 nav-link">Home</a>
+                <a href="#about" class="block py-3 nav-link">About</a>
+                <a href="#projects" class="block py-3 nav-link">Projects</a>
+                <a href="#skills" class="block py-3 nav-link">Skills</a>
+                <a href="#experience" class="block py-3 nav-link">Experience</a>
+                <a href="#certificates" class="block py-3 nav-link">Certificates
+</a>
+                <a href="#contact" class="block py-3 nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative pt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="animate-fade-in-up">
+                <div class="mb-6">
+                    <div class="w-32 h-32 mx-auto mb-8 relative">
+                        <img src="imgs/IMG_0220.PNG" 
+                             alt="Ahmed Mohamed Fareed" 
+                             class="w-full h-full rounded-full object-cover border-4 border-gray-100 shadow-xl">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10"></div>
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Hi, I'm <span class="text-blue-600">Ahmed</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    A passionate web developer crafting beautiful digital experiences with modern technologies and innovative design solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="#contact" class="btn-primary">
+                        <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#projects" class="btn-secondary">
+                        <i data-lucide="eye" class="w-5 h-5 mr-2"></i>
+                        View My Work
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/ahmedfare" class="social-icon">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/ahmedfareed23" class="social-icon">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.facebook.com/ahmed.programer.23768?mibextid=ZbWKwL" class="social-icon">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ahmedfareed013013?r=nametag" class="social-icon">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="w-6 h-6 text-gray-400"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Passionate about creating exceptional digital experiences
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Front-End Developer</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                       I'm Ahmed Fareed. I’m a 19-year-old frontend developer passionate about building modern, responsive, and user-friendly websites. I started coding at 13, and over the years, I’ve honed my skills in HTML, CSS, and JavaScript to craft clean and efficient digital experiences. My focus is on writing maintainable code and continuously learning the latest web technologies to stay ahead in the industry.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                        projects, or sharing knowledge with the developer community.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">10+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">3+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="skill-card">
+                        <i data-lucide="code" class="w-8 h-8 text-blue-600 mb-4"></i>
+                        <h4 class="font-semibold mb-2">Frontend Development</h4>
+                        <p class="text-gray-600 text-sm">HTML , CSS , JS</p>
+                    </div>
+                 
+                    
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Here are some of my recent projects that showcase my skills and passion for web development
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="imgs/Deci.png" alt="Deci">
+                        <div class="project-overlay">
+                           
+                            <a href="https://ahmedfare.github.io/deci/" class="project-link">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">DECI</h3>
+                        <p class="text-gray-600 mb-4">Creative Home Page Website For DECI </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="imgs/Grow.png" alt="Grow">
+                        <div class="project-overlay">
+                            
+                            <a href="https://ahmedfare.github.io/buissness/" class="project-link">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Grow your business.</h3>
+                        <p class="text-gray-600 mb-4">Give your business a boost with a beautifully crafted homepage</p>
+                        <div class="flex flex-wrap gap-2">
+                           <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="imgs/Velocity.png" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                           
+                            <a href="https://ahmedfare.github.io/velocity/" class="project-link">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">THIS IS VELOCITY</h3>
+                        <p class="text-gray-600 mb-4">A FREE REPSONSIVE TEMPLATE BY WEBFLOW</p>
+                        <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="imgs/Screenshot 2025-08-24 000156.png" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            
+                            <a href="https://ahmedfare.github.io/portfolio2/" class="project-link">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                        <p class="text-gray-600 mb-4">Responsive portfolio with smooth animations and modern design</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="imgs/Egy.png" alt="Blog Platform">
+                        <div class="project-overlay">
+                           
+                            <a href="https://ahmedfare.github.io/english/" class="project-link">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Egypt's achievements</h3>
+                        <p class="text-gray-600 mb-4">Egypt's achievements over 10 years</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="imgs/Edu.png" alt="Chat Application">
+                        <div class="project-overlay">
+                          
+                            <a href="#https://ahmedfare.github.io/geeks/" class="project-link">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Education in Egypt</h3>
+                        <p class="text-gray-600 mb-4">Types of Education in Egypt</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Skills & Technologies</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Technologies I work with to bring ideas to life
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8">Technical Skills</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">HTML</span>
+                                <span class="text-gray-600">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">CSS</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-3">
+                                <span class="font-medium">JavaScript</span>
+                                <span class="text-gray-600">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                       
+                   
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8">Tools & Technologies</h3>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="tech-card text-center">
+                            <i data-lucide="code" class="w-12 h-12 mx-auto mb-3 text-orange-500"></i>
+                            <span class="font-medium">HTML5</span>
+                        </div>
+                        <div class="tech-card text-center">
+                            <i data-lucide="palette" class="w-12 h-12 mx-auto mb-3 text-blue-500"></i>
+                            <span class="font-medium">CSS3</span>
+                        </div>
+                        <div class="tech-card text-center">
+                            <i data-lucide="zap" class="w-12 h-12 mx-auto mb-3 text-yellow-500"></i>
+                            <span class="font-medium">JavaScript</span>
+                        </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Experience & Education</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    My journey in web development and design
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline">
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-2">Egyptian Chinese University</h3>
+                            <h4 class="text-gray-700 mb-3 font-medium">
+
+Student, Computer Software Engineering</h4>
+                            <p class="text-gray-600 mb-4">
+                                Studying Computer Science Engineering with a strong interest in technology, programming, and academic research. Focused on core areas such as software development, problem-solving, and flowchart design, Enthusiastic about learning emerging technologies, especially Web Development, and applying knowledge in real-world projects.
+                            </p>
+                       
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 - 2025</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-2">Front-End Developer</h3>
+                            <h4 class="text-gray-700 mb-3 font-medium">Self learning</h4>
+                            <p class="text-gray-600 mb-4">
+                               Developed responsive web applications using HTML, CSS, and JavaScript. Designed user-friendly interfaces and optimized website performance . Focused on cross-browser compatibility and debugging issues effectively.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-tag-small">HTML</span>
+                                <span class="tech-tag-small">CSS</span>
+                                <span class="tech-tag-small">JS</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                   
+                    <!-- Experience Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 - Present</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-2">Software Testing</h3>
+                            <h4 class="text-gray-700 mb-3 font-medium">DEBI</h4>
+                            <p class="text-gray-600 mb-4">
+                                This course introduces students to the principles, techniques, and tools of software testing. It covers both manual and automated testing approaches to ensure software quality and reliability. Students will learn industry best practices, real-world case studies, and hands-on tools for practical experience.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-tag-small">HTML</span>
+                                <span class="tech-tag-small">CSS</span>
+                                <span class="tech-tag-small">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="certificates" class="section">
+  <h2 class="section-title">Certificates</h2>
+  <p class="section-subtitle">Here are some of my achievements and certifications</p>
+
+  <div class="certificates-container">
+    <!-- Certificate Card 1 -->
+    <div class="certificate-card">
+      <img src="imgs/cert/0ac1688d-b838-4d8c-8709-d9e59a4b8587_page-0001.jpg" alt="Certificate 1">
+      <h3>HTML</h3>
+      <p>SOLOLEARN</p>
+    </div>
+
+    <!-- Certificate Card 2 -->
+    <div class="certificate-card">
+      <img src="imgs/cert/128.png" alt="Certificate 2">
+      <h3>
+Deci Innovation Day (Participation)</h3>
+      <p>Google</p>
+    </div>
+    <div class="certificate-card">
+      <img src="imgs/cert/WhatsApp Image 2025-08-18 at 10.18.06_eb1c58a0.jpg" alt="Certificate 2">
+      <h3>Deci Innovation Day (Achievement) 1st Place</h3>
+      <p>Google</p>
+    </div><div class="certificate-card">
+      <img src="imgs/cert/CSS_page-0001.jpg" alt="Certificate 2">
+      <h3>CSS</h3>
+      <p>Great Learning</p>
+    </div><div class="certificate-card">
+      <img src="imgs/cert/DECI-GEEKS-L2-36_page-0001.jpg" alt="Certificate 2">
+      <h3>DECI GEEKS L2</h3>
+      <p>Microsoft</p>
+    </div><div class="certificate-card">
+      <img src="imgs/cert/Deci_page-0001.jpg" alt="Certificate 2">
+      <h3>Deci level 2</h3>
+      <p>Udacity</p>
+    </div><div class="certificate-card">
+      <img src="imgs/cert/HTML_page-0001.jpg" alt="Certificate 2">
+      <h3>HTML</h3>
+      <p>Great Learning</p>
+    </div><div class="certificate-card">
+      <img src="imgs/cert//Udemy_page-0001.jpg" alt="Certificate 2">
+      <h3>JavaScript</h3>
+      <p>Udemy</p>
+    </div>
+
+    <!-- Add more certificates as needed -->
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Have a project in mind? Let's work together to bring your ideas to life!
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div>
+                    <form class="space-y-6" id="contact-form">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2 text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="form-input">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2 text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="form-input">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-2 text-gray-700">Subject</label>
+                            <input type="text" id="subject" name="subject" required 
+                                   class="form-input">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2 text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      class="form-input resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">
+                            <i data-lucide="send" class="w-5 h-5 mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1">Email</h4>
+                            <a href="mailto:ahmed.fareed@example.com" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                ahmedffareed23206@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1">Phone</h4>
+                            <a href="tel:+201234567890" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                +20 1128644470
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-1">Location</h4>
+                            <p class="text-gray-600">Cairo, Egypt</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="pt-8">
+                        <h4 class="font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/ahmedfare" class="social-link">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                            </a>
+                            <a href="www.linkedin.com/in/ahmedfareed23" class="social-link">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://www.facebook.com/ahmed.programer.23768?mibextid=ZbWKwL" class="social-link">
+                                <i data-lucide="facebook" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ahmedfareed013013?r=nametag" class="social-link">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center">
+                <p class="text-gray-600">
+                    &copy; 2024 Ahmed Mohamed Fareed. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                    Built with ❤️ using HTML, CSS & JavaScript
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i data-lucide="chevron-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
