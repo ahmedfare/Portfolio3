@@ -1,10 +1,6 @@
 // Modern Portfolio JavaScript - Clean & Interactive
 
 // DOM Content Loaded Event
-document.addEventListener('DOMContentLoaded', function() {
-    initializePortfolio();
-    initializeLucideIcons();
-});
 
 // Initialize Lucide Icons
 function initializeLucideIcons() {
@@ -33,7 +29,7 @@ function initializePortfolio() {
 function initMobileMenu() {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = mobileMenuBtn?.querySelector('[data-lucide]');
+    const menuIcon = mobileMenuBtn?.querySelector('svg');
     
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', function() {
@@ -494,13 +490,18 @@ window.addEventListener('error', function(e) {
 });
 
 // Initialize additional features
-document.addEventListener('DOMContentLoaded', function() {
-    optimizePerformance();
-    initTypingAnimation();
-    initParallaxEffect();
-    initThemeToggle();
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        initializePortfolio();
+        initializeLucideIcons();
+        optimizePerformance();
+        initTypingAnimation();
+        initParallaxEffect();
+        initThemeToggle();
+    } catch (err) {
+        console.error("Init error:", err);
+    }
 });
-
 // Keyboard Navigation Support
 document.addEventListener('keydown', function(e) {
     // ESC key closes mobile menu
