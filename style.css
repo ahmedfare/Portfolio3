@@ -221,7 +221,6 @@ p {
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
     text-align: left;
-  
 }
 
 .skill-card:hover {
@@ -626,8 +625,8 @@ p {
 .certificates-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px; /* قللتها بدل 20px أو 30px */
-  margin-top: 20px; /* قللنا المسافة فوق */
+  gap: 10px; 
+  margin-top: 20px; 
   justify-content: center;
 }
 
@@ -635,15 +634,15 @@ p {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
-  padding: 12px;        /* أصغر بادينج */
-  max-width: 250px;     /* أصغر عرض */
-  margin: 0 auto;       /* منع مسافة زيادة حوالين الكارت */
+  padding: 12px;        
+  max-width: 250px;     
+  margin: 0 auto;       
   transition: transform 0.3s ease;
 }
 
 .certificates-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* أصغر من الأول */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
   gap: 15px;
   margin-top: 30px;
   justify-content: center;
@@ -656,7 +655,7 @@ p {
 
 
 .certificate-card:hover {
-  transform: translateY(-5px); /* حركة بسيطة */
+  transform: translateY(-5px); 
 }
 
 .certificate-card img {
@@ -667,11 +666,14 @@ p {
 }
 
 .certificate-card h3 {
-  font-size: 1rem;             /* أصغر شوية */
+  font-size: 1rem;            
   margin: 8px 0;
 }
 
 .certificate-card p {
-  font-size: 0.8rem;           /* أصغر من الأول */
+  font-size: 0.8rem;           
   color: #666;
+}
+.btm{
+    padding-top: 50px !important;
 }
