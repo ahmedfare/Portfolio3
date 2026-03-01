@@ -26,7 +26,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+.testio{
+    border: 2px #2563eb solid ;
+    padding: 12px;
+    border-radius: 40px;
+    background-color: #2563eb;
+    color: white;
+     transition:  0.3s !important;
 
+   
+}
+.testt{
+    margin-top: 40px;
+         transition:  0.5s !important;
+
+}
+.testt:hover{
+    transform: scale(1.03);
+}
+.testio:hover{
+        background-color: #1d4ed8;
+ transition:  0.3s !important;
+
+}
 html {
     scroll-behavior: smooth;
     font-size: 16px;
